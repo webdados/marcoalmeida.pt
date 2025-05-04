@@ -144,6 +144,7 @@ async function initializeContent() {
 
   } catch (error) {
     console.error('Error loading configuration:', error);
+    document.querySelector('.blog-section').remove();
   }
 }
 
