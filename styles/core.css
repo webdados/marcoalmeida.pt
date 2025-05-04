@@ -144,10 +144,10 @@ h2 {
 
 @media (max-width: 768px) {
     .bio-container {
-        max-width: calc(100vw - 2rem);
-        margin: 1rem;
+        max-width: calc(100vw - 3rem);
+        margin: 1.5rem;
         padding: 1rem;
-        min-height: calc(100vh - 2rem);
+        min-height: calc(100vh - 3rem);
     }
     
     .profile-image {
