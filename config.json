@@ -8,9 +8,11 @@
   "social": {
     "x": "https://x.com/MarcoAlmeidaPT",
     "linkedin": "https://www.linkedin.com/in/marcoandrealmeida/",
-    "email": "",
+    "facebook": "https://www.facebook.com/wonderm00n/",
+    "instagram": "https://www.instagram.com/wonderm00n/",
     "wordpress": "https://profiles.wordpress.org/webdados/",
     "github": "https://github.com/webdados",
+    "email": "mailto:hello@marcoalmeida.pt",
     "bluesky": ""
   },
   "links": [
@@ -21,6 +23,10 @@
     {
       "title": "Naked Cat Plugins",
       "url": "https://nakedcatplugins.com/"
+    },
+    {
+      "title": "Marco Almeida Photography",
+      "url": "https://photography.marcoalmeida.com/"
     }
   ],
   "blog": {
