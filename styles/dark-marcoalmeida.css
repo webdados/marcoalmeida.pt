@@ -110,3 +110,10 @@ h1 {
   color: var(--accent-color);
   text-decoration: underline;
 }
+
+.credits {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dotted rgba(255, 255, 255, 0.2);
+  font-size: 0.8125rem;
+}
