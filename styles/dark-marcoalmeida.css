@@ -1,15 +1,15 @@
 /* Dark Theme: Only color, font, and visual style rules */
 :root {
-  --link-color: #80BDFF;
-  --link-hover-color: #B3D7FF;
-  --text-color: #E8EAED;
-  --button-bg-color: #80BDFF;
+  --link-color: #05A8FF; /* From #0083c8 */
+  --link-hover-color: #C091D4; /* From #7c3b97 */
+  --text-color: #C7D3D6;
+  --button-bg-color: #05A8FF;
   --button-text-color: #202124;
-  --button-hover-bg-color: #B3D7FF;
+  --button-hover-bg-color: #C091D4;
   --button-hover-text-color: #202124;
   --background-color: #292c35;
   --border-color: #3C4043;
-  --accent-color:  #B3D7FF;
+  --accent-color:  #C091D4;
 }
 
 body {
