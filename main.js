@@ -121,22 +121,26 @@ async function initializeContent() {
     }
 
     // Load blog post
-    fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(config.blog.rssFeed)}`)
-      .then(response => response.json())
-      .then(data => {
-        const post = data.items[0];
-        document.querySelector('.post-content').innerHTML = `
-          <h3>${post.title}</h3>
-          <p>${post.description.split(' ').slice(0, config.blog.wordCount).join(' ')}...</p>
-          <a href="${post.link}" class="read-more" aria-label="Read more about ${post.title}">Read More →</a>
-        `;
-      })
-      .catch(error => {
-        console.error('Error fetching blog post:', error);
-        document.querySelector('.post-content').innerHTML = `
-          <p>Visit my blog at <a href="${config.blog.rssFeed.split('/feed')[0]}" aria-label="Visit Marco Almeida's blog">blog.wonderm00n.com</a></p>
-        `;
-      });
+    if (config.blog.rssFeed) {
+      fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(config.blog.rssFeed)}`)
+        .then(response => response.json())
+        .then(data => {
+          const post = data.items[0];
+          document.querySelector('.post-content').innerHTML = `
+            <h3>${post.title}</h3>
+            <p>${post.description.split(' ').slice(0, config.blog.wordCount).join(' ')}...</p>
+            <a href="${post.link}" class="read-more" aria-label="Read more about ${post.title}">Read More →</a>
+          `;
+        })
+        .catch(error => {
+          console.error('Error fetching blog post:', error);
+          document.querySelector('.post-content').innerHTML = `
+            <p>Visit my blog at <a href="${config.blog.rssFeed.split('/feed')[0]}" aria-label="Visit Marco Almeida's blog">blog.wonderm00n.com</a></p>
+          `;
+        });
+    } else {
+      console.error('Blog RSS feed not provided in config.json');
+    }
 
   } catch (error) {
     console.error('Error loading configuration:', error);
