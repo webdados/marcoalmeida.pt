@@ -140,11 +140,11 @@ async function initializeContent() {
         });
     } else {
       console.error('Blog RSS feed not provided in config.json');
+      document.querySelector('.blog-section').remove();
     }
 
   } catch (error) {
     console.error('Error loading configuration:', error);
-    document.querySelector('.blog-section').remove();
   }
 }
 
