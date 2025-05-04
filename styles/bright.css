@@ -1,0 +1,126 @@
+/* Bright Theme: Only color, font, and visual style rules */
+:root {
+  --accent-color: #2b3f6d;
+  --link-color: #1a73e8;
+  --link-hover-color: #0d47a1;
+  --text-color: #202124;
+  --button-bg-color: #1a73e8;
+  --button-text-color: #ffffff;
+  --button-hover-bg-color: #0d47a1;
+  --button-hover-text-color: #ffffff;
+  --background-color: #ffffff;
+  --border-color: #dadce0;
+}
+
+body {
+    color: var(--text-color);
+    background-color: #2b3f6d;
+    background-image: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%) !important;
+}
+
+.bio-container {
+    background: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.profile-image {
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.tagline {
+    color: #5f6368;
+}
+
+.social-icons a {
+    color: #5f6368;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.social-icon {
+    color: #5f6368;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.link-button, .support-button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+  }
+
+.link-button:hover, .support-button:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-text-color);
+}
+
+.bio p {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 2px solid #e8f0fe;
+    padding: 2rem;
+}
+
+.blog-section h2 {
+    color: var(--accent-color);
+}
+
+.blog-post {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 2px solid #e8f0fe;
+}
+
+.blog-post h3 {
+    color: #202124;
+}
+
+.read-more {
+    color: var(--accent-color);
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.support-button {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.support-button:hover {
+    background: #1557b0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    
+    .profile-image {
+        width: 96px;
+        height: 96px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+} 
