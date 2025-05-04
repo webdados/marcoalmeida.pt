@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 6rem);
     background: var(--background-color);
 }
 

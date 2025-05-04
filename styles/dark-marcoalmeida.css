@@ -21,7 +21,7 @@ body {
   background: #131416;
 }
 
-.bio-container::before {
+/*.bio-container::before {
   content: "";
   position: absolute;
   top: -50px;
@@ -31,7 +31,7 @@ body {
   background: radial-gradient(circle at center, rgba(98, 101, 64, 0.2) 0%, transparent 50%);
   filter: blur(100px);
   z-index: -1;
-}
+}*/
 
 .profile-image {
   border: 3px solid var(--accent-color);
