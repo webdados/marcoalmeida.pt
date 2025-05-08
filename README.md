@@ -15,7 +15,7 @@ Perfect for product owners, devs, and anyone in tech who wants a home base that 
 * **Pulls in your latest blog posts** – drop an RSS feed in the config and you're done.  
 * **Fully responsive** – looks sharp on every device.  
 * **Custom domain ready** – add your own domain with a simple CNAME file.  
-* **MIT-licensed** – remix it, ship it, brag about it.
+* **MIT-licensed** – remix it, ship it, brag about it. See [LICENSE](LICENSE).
 
 ## Quick-start (3 steps)
 
@@ -53,7 +53,6 @@ Perfect for product owners, devs, and anyone in tech who wants a home base that 
 
 That's it—high-five! 🎉
 
-
 ## Theme Switcher – Make it yours
 
 The `core.css` file simply holds the minimum layout styles and generally speaking doesn't need to change. 
@@ -76,7 +75,6 @@ The "Theme Switcher" allows you to preview any theme via a query parameter in yo
 
 ## Available Themes
 
-
 | Theme   | Description | Main Colors | Screenshot |
 |---------|-------------|-------------|------------|
 | **bulky** | Large, bold, soft, and modern. Features pill-shaped buttons, thick borders, and a playful, accessible look. | <img valign='middle' alt='button' src='https://readme-swatches.vercel.app/a18aff'/> `#a18aff` (button)<br><img valign='middle' alt='accent' src='https://readme-swatches.vercel.app/6c4cff'/> `#6c4cff` (accent)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/f5f2ef'/> `#f5f2ef` (background)<br><img valign='middle' alt='border' src='https://readme-swatches.vercel.app/18001a'/> `#18001a` (border) | ![Preview of Bulky theme](screenshot-bulky.png)|
@@ -86,19 +84,18 @@ The "Theme Switcher" allows you to preview any theme via a query parameter in yo
 | **minimal** | Ultra-simple, clean, and neutral. | <img valign='middle' alt='text' src='https://readme-swatches.vercel.app/2d3748'/> `#2d3748` (text)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/f7fafc'/> `#f7fafc` (background) | ![Preview of Minimal theme](screenshot-minimal.png) |
 
 
-
 ## Contribute
 
 Have a fresh style or nifty improvement?  
 PRs that enhance the stylesheet, improve performance, add new themes, or overall accessibility are always welcome.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute.
 
 ## Feedback
 
 Questions, ideas, or you just deployed your own?  
 Open an issue or ping me on [X](https://x.com/learnwithmattc) — I'd love to see and share your Connect page with the world.
 
-
 ## License
 
-[MIT](LICENSE) – free to use, modify, and share.
+[MIT License](LICENSE) – free to use, modify, and share. See the LICENSE file for details.
