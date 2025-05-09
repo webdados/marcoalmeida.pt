@@ -41,5 +41,6 @@
     "buttonText": "Contact Me ✉️",
     "url": ""
   },
-  "theme": "dark-marcoalmeida"
+  "theme": "dark-marcoalmeida",
+  "gravatarHovercard": true
 } 

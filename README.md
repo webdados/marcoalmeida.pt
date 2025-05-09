@@ -83,6 +83,22 @@ The "Theme Switcher" allows you to preview any theme via a query parameter in yo
 | **dark** | High-contrast, accessible dark mode. Gold/yellow accents on a deep black background. | <img valign='middle' alt='gold' src='https://readme-swatches.vercel.app/FFD700'/> `#FFD700` (gold)<br><img valign='middle' alt='text' src='https://readme-swatches.vercel.app/202124'/> `#202124` (text)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/070708'/> `#070708` (background) | ![Preview of Dark theme](screenshot-dark.png) |
 | **minimal** | Ultra-simple, clean, and neutral. | <img valign='middle' alt='text' src='https://readme-swatches.vercel.app/2d3748'/> `#2d3748` (text)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/f7fafc'/> `#f7fafc` (background) | ![Preview of Minimal theme](screenshot-minimal.png) |
 
+## Gravatar Hovercards – Optional Profile Popups
+
+You can optionally enable [Gravatar Hovercards](https://docs.gravatar.com/sdk/hovercards/) to show a pop-up profile card when users hover over your Gravatar image.
+
+To enable or disable this feature, set the `gravatarHovercard` option in your `config.json`:
+
+```json
+{
+  ...
+  "gravatarHovercard": true
+}
+```
+- Set to `true` to enable the hovercard popup on your profile image.
+- Set to `false` to disable it (default).
+
+For more details and customization options, see the [Gravatar Hovercards User Guide](https://docs.gravatar.com/sdk/hovercards/).
 
 ## Contribute
 

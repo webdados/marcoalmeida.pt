@@ -28,7 +28,7 @@ body {
     padding: 1rem;
 }
 
-.profile-image {
+#gravatar-image {
     width: 128px;
     height: 128px;
     border-radius: 50%;
@@ -151,7 +151,7 @@ h2 {
         min-height: calc(100vh - 3rem);
     }
     
-    .profile-image {
+    #gravatar-image {
         width: 96px;
         height: 96px;
     }

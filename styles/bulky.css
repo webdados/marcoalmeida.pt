@@ -32,7 +32,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.profile-image {
+#gravatar-image {
   width: 140px;
   height: 140px;
   border-radius: 50%;

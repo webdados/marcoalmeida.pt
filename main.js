@@ -39,6 +39,29 @@
   });
 })();
 
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const response = await fetch('config.json');
+    const config = await response.json();
+    const profileImage = document.getElementById('gravatar-image');
+    if (config.profile && config.profile.gravatarEmail) {
+      const cleanEmail = config.profile.gravatarEmail.trim().toLowerCase();
+      const gravatarHash = CryptoJS.SHA256(cleanEmail);
+      profileImage.src = `https://www.gravatar.com/avatar/${gravatarHash}?s=200`;
+      if (config.gravatarHovercard) {
+        profileImage.classList.add('hovercard');
+        if (window.Gravatar && typeof Gravatar.init === 'function') {
+          Gravatar.init();
+        }
+      } else {
+        profileImage.classList.remove('hovercard');
+      }
+    }
+  } catch (error) {
+    console.error('Error setting Gravatar image:', error);
+  }
+});
+
 // Load and apply configuration
 async function initializeContent() {
   try {
@@ -58,12 +81,6 @@ async function initializeContent() {
     document.getElementById('profile-name').textContent = config.profile.name;
     document.getElementById('profile-tagline').textContent = config.profile.tagline;
     document.getElementById('bio-text').textContent = config.profile.bio;
-
-    // Set Gravatar image using SHA-256 (CryptoJS must be loaded in the page)
-    const gravatarHash = CryptoJS.SHA256(config.profile.gravatarEmail.trim().toLowerCase());
-    const profileImage = document.getElementById('profile-image');
-    profileImage.src = `https://www.gravatar.com/avatar/${gravatarHash}?s=200&d=mp`;
-    profileImage.alt = `Profile picture of ${config.profile.name}`;
 
     // Generate social icons
     const socialIcons = document.querySelector('.social-icons');

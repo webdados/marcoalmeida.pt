@@ -28,7 +28,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.profile-image {
+#gravatar-image {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -188,7 +188,7 @@ h1 {
         padding: 1.5rem 1rem;
     }
 
-    .profile-image {
+    #gravatar-image {
         width: 100px;
         height: 100px;
     }
